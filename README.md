@@ -1,6 +1,7 @@
-###这个不是我本人的项目，是拿别人的修改的，原创本人地址https://github.com/pengrongjie/vue-node-mongodb
+这个不是我本人的项目，是拿别人的修改的，原创本人地址https://github.com/pengrongjie/vue-node-mongodb
 # 全栈第一步
 
+这个不是我本人的项目，是拿别人的修改的，原创本人地址https://github.com/pengrongjie/vue-node-mongodb
 > vue(全家桶)+node(express)+mongodb(mongoose)+阿里云(cenOS)部署+域名上线，前后端分离博客
 
 > [http://pengrongjie.com/](http://pengrongjie.com/) （请使用PC打开，并不是一个移动端项目）
