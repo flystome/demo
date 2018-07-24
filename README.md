@@ -1,3 +1,4 @@
+###这个不是我本人的项目，是拿别人的修改的，原创本人地址https://github.com/pengrongjie/vue-node-mongodb
 # 全栈第一步
 
 > vue(全家桶)+node(express)+mongodb(mongoose)+阿里云(cenOS)部署+域名上线，前后端分离博客
@@ -76,7 +77,7 @@ npm start
 ```
 vue-node-mongodb/server
 ```
-cd vue-node-mongodb/server/app.js 
+cd vue-node-mongodb/server/app.js
 
 找到 `app.use(express.static(path.join(__dirname, 'public')))` 在后面加上，以下代码
 
