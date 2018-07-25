@@ -1,0 +1,72 @@
+.login {
+  width: 300px;
+  margin-left: 50px;
+  margin-bottom: 150px;
+  text-align: left;
+}
+.right-item {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: 0.5s;
+  &:hover {
+    // ytransform: translateY(-6px);
+    box-shadow: 0 15px 35px 0 rgba(24, 44, 79, 0.15);
+  }
+  &.logined {
+    p {
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    .goAdmin {
+      color: #e96900;
+    }
+  }
+  h1 {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #4fc08d;
+  }
+  .warnInfo {
+    margin: 20px 0;
+    color: #e96900;
+  }
+  .input-box {
+    p {
+      height: 35px;
+      line-height: 35px;
+    }
+    input {
+      height: 35px;
+      width: 250px;
+      margin: 10px 0;
+      padding-left: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      &:focus {
+        border: 1px solid #00aaee;
+      }
+    }
+  }
+  button {
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    width: 260px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #4fc08d;
+    color: #fff;
+    outline: none;
+  }
+  p {
+    cursor: pointer;
+    .goRegister {
+      color: #e96900;
+    }
+  }
+}
+
