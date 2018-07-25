@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import './assets/style/common.less'
+
 import axios from 'axios'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
@@ -33,12 +35,13 @@ router.beforeEach((to, from, next) => {
   if(getCookie('isAdmin') === 'true'){//如果有cookie就畅通无阻
     next();
   }else{
-    if(to.path=='/' || to.path=='/detail'){//如果是首页和详情页面就直接next()
-      next();
-    }else{//不然就跳转到登录；
-      console.log('没有cookie:' + getCookie("isAdmin"))
-      next('/');
-    }
+    next()
+    // if(to.path=='/' || to.path=='/detail'){//如果是首页和详情页面就直接next()
+    //   next();
+    // }else{//不然就跳转到登录；
+    //   console.log('没有cookie:' + getCookie("isAdmin"))
+    //   next('/');
+    // }
   }
 });
 

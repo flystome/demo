@@ -170,9 +170,8 @@ router.get('/index_detail_comment', function(req, res, next){
 // })
 
 //初始化首页
-router.get('/index_init', (req, res, next) => {
+router.get('/getImg', (req, res, next) => {
   Model.Img.find({}, (err, doc) => {
-    console.log(doc, 1)
     if (err) {
       console.log(err);
       return;
@@ -184,6 +183,7 @@ router.get('/index_init', (req, res, next) => {
     }
   })
 })
+
 
 // 文章详情,提交新的评论
 router.post('/index_detail', function(req, res, next){

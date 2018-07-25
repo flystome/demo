@@ -58,6 +58,30 @@ var imgSchema = new mongoose.Schema({
   src: {
     type: String,
     default: ''
+  },
+  belong1: {
+    type: String,
+    default: ''
+  },
+  belong2: {
+    type: String,
+    default: ''
+  },
+  see: {
+    type: Number,
+    default: 0,
+  },
+  sms: {
+    type: Number,
+    default: 0,
+  },
+  praise: {
+    type: Number,
+    default: 0,
+  },
+  creat: {
+    type: Number,
+    default: Date.now()
   }
 });
 

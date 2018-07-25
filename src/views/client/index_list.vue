@@ -10,6 +10,10 @@
         </li>
       </ul>
     </section>
+
+    <section class='content'>
+
+    </section>
     <!-- 文章简介 -->
     <div class="left-item" v-for="item in articleData">
       <router-link :to="{path: '/detail', query: {_id: item._id }}">

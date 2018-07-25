@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '../views/client/index'
-import Index_list from '../views/client/index_list'
+import Home from '../views/client/home/home'
 import Datail from '../views/client/detail'
+import Login from '../views/client/login/login'
+import Register from '../views/client/register/register'
 
 import Admin from '../views/admin/admin'
 import Admin_index from '../views/admin/admin_index'
@@ -30,13 +32,23 @@ export default new Router({
       children: [
         {
           path: '/',
-          name: 'Index_list',
-          component: Index_list
+          name: 'Home',
+          component: Home
         },
         {
           path:'/detail',
           name: 'Datail',
           component: Datail
+        },
+        {
+          path: '/login',
+          name: 'Login',
+          component: Login
+        },
+        {
+          path: '/register',
+          name: 'Register',
+          component: Register
         }
       ]
     },
