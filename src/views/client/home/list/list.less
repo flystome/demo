@@ -3,13 +3,19 @@
   margin: 0 auto 0px;
   ul {
     width: 100%;
-    margin-left: -20px;
     li {
       width: 20%;
       float: left;
-      padding-left: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
       box-sizing: border-box;
       margin-bottom: 30px;
+    }
+    li:nth-child(5n) {
+      padding-right: 0;
+    }
+    li:nth-child(5n + 1) {
+      padding-left: 0;
     }
   }
   .item {
@@ -33,18 +39,32 @@
       line-height: 24px;
     }
     .kind {
-      margin-bottom: 16px;
+      margin-bottom: 20px;
       margin-top: 3px;
       font-size: 12px;
     }
     .action {
       margin-left: 0;
+      margin-top: 10px;
+      margin-bottom: 0;
       color: #999;
       li {
         width: auto;
         margin-right: 8px;
+        margin-bottom: 10px;
+        line-height: 14px;
+        height: 14px;
+        img {
+          display: inline-block;
+          width: 16px;
+          height: 14px;
+          margin-right: 5px;
+          vertical-align: middle;
+        }
         span {
           display: inline-block;
+          font-size: 12px;
+          line-height: 14px;
         }
       }
     }

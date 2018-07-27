@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import navHeader  from '../../components/navHeader'
+import navHeader  from '../../components/navHeader/navHeader'
 import navFooter  from '../../components/navFooter'
 export default {
   data(){

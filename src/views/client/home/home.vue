@@ -3,7 +3,7 @@
     <Banner></Banner>
     <section class='container'>
       <ul class="tab clearfix">
-        <li v-for='(item, index) in tabs' :class="{'cur': curIndex === index}">{{item}}</li>
+        <li v-for='(item, index) in tabs' @click='curIndex = index' :class="{'cur': curIndex === index}">{{item}}</li>
       </ul>
       <List></List>
     </section>

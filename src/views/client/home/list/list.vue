@@ -10,9 +10,9 @@
             <p class="title">{{item.title}}</p>
             <p class="kind">{{item.belong1}}-{{item.belong2}}</p>
             <ul class="action clearfix">
-              <li><i class="fa fa-comment-alt"></i><span class='num'></span></li>
-              <li><i class="fa fa-eye"></i><span class='num'></span></li>
-              <li><i class="fa fa-thumbs-up"><span class='num'></span></i></li>
+              <li><img src='~Img/card-liulan.svg'><span class='num'>{{item.see}}</span></li>
+              <li><img src='~Img/card-pinglun.svg'><span class='num'>{{item.sms}}</span></li>
+              <li><img src='~Img/card-zan.svg'><span class='num'>{{item.praise}}</span></i></li>
             </ul>
           </div>
           <div class="item_author">
