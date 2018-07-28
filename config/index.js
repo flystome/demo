@@ -30,15 +30,15 @@ module.exports = {
     proxyTable: {
       // 用户登录注册退出
       '/users/*':{
-        target:'http://localhost:80'
+        target:'http://localhost:8081'
       },
       // 后台
       '/admin/*':{
-        target:'http://localhost:80'
+        target:'http://localhost:8081'
       },
       // 前台
       '/index/*':{
-        target:'http://localhost:80'
+        target:'http://localhost:8081'
       },
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"

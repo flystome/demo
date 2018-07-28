@@ -2,7 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '../views/client/index'
 import Home from '../views/client/home/home'
-import Datail from '../views/client/detail'
+import Private from '../views/client/private/private'
+import Company from '../views/client/company/company'
+import Datail from '../views/client/detail/detail'
 import Login from '../views/client/login/login'
 import Register from '../views/client/register/register'
 
@@ -36,7 +38,17 @@ export default new Router({
           component: Home
         },
         {
-          path:'/detail',
+          path: '/company',
+          name: 'Company',
+          component: Company
+        },
+        {
+          path: '/designer',
+          name: 'Private',
+          component: Private
+        },
+        {
+          path:'/details',
           name: 'Datail',
           component: Datail
         },

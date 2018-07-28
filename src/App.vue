@@ -5,8 +5,14 @@
 </template>
 
 <script>
+import vue from 'vue'
+import List from './views/client/common/list/list'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    List
+  }
 }
 </script>
 

@@ -6,9 +6,9 @@
       </a>
       <div class="link">
         <ul>
-          <li><route-link to="/">首页</route-link></li>
-          <li><route-link to="/designer">找设计师</route-link></li>
-          <li><route-link to="/company">找设计公司</route-link></li>
+          <li><router-link to="/">首页</router-link></li>
+          <li><router-link to="/designer">找设计师</router-link></li>
+          <li><router-link to="/company">找设计公司</router-link></li>
         </ul>
       </div>
       <div class="setting">

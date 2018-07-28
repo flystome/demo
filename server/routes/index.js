@@ -184,6 +184,20 @@ router.get('/getImg', (req, res, next) => {
   })
 })
 
+router.get('/detail', (req, res, next) => {
+  var _id = req.body._id;
+  Model.Img.findOne({_id: _id}, (err, doc) => {
+    if (err) {
+      console.log(err);
+      return;
+    } else {
+      responseData.code = 200;
+      responseData.message = 'OK';
+      responseData.data = doc;
+      res.json(responseData);
+    }
+  })
+})
 
 // 文章详情,提交新的评论
 router.post('/index_detail', function(req, res, next){

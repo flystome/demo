@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/test93');
+mongoose.connect('mongodb://localhost:27017/local');
 // 用户
 var usersSchema = new mongoose.Schema({
   username: String,

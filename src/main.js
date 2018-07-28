@@ -16,6 +16,7 @@ Vue.prototype.$http = axios
 Vue.use(ElementUI)
 axios.defaults.withCredentials = true
 Vue.use(VueQuillEditor)
+
 // 获取cookie
 function getCookie(name){
     name = name + "="

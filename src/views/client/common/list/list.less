@@ -23,6 +23,10 @@
     border-radius: 3px;
     .item_img {
       width: 100%;
+      a {
+        display: inline-block;
+        width: 100%;
+      }
       img {
         width: 100%;
       }
@@ -50,7 +54,7 @@
       color: #999;
       li {
         width: auto;
-        margin-right: 8px;
+        margin-right: 0;
         margin-bottom: 10px;
         line-height: 14px;
         height: 14px;
@@ -72,5 +76,32 @@
   .item_author {
     border-top: 1px solid #999;
     height: 51px;
+    div {
+      height: 24px;
+      line-height: 24px;
+      padding: 13px 16px;
+      span {
+        display: inline-block;
+        height: 24px;
+        line-height: 24px;
+        float: left;
+        font-size: 12px;
+      }
+    }
+    .photo {
+      margin-right: 10px;
+      img {
+        width: 24px;
+        height: 24px;
+        border-radius: 12px;
+      }
+    }
+    .name {
+      cursor: pointer;
+    }
+    .time {
+      color: #999;
+      float: right;
+    }
   }
 }

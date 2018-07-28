@@ -4,7 +4,9 @@
       <li v-for="item in items">
         <div class="item">
           <div class="item_img">
-            <img :src='item.src' alt="">
+            <router-link to='/details'>
+              <img :src='item.src' alt="">
+            </router-link>            
           </div>
           <div class="item_detail">
             <p class="title">{{item.title}}</p>
@@ -16,7 +18,11 @@
             </ul>
           </div>
           <div class="item_author">
-            <p><span class='photo'></span></span><span class="name"></span></p>
+            <div>
+              <span class='photo'><img :src="item.photo" alt=""></span>
+              <span class="name">{{item.author}}</span>
+              <span class="fr time">{{item.time}}前</span>
+            </div>
           </div>
         </div>
       </li>
@@ -26,7 +32,7 @@
 
 <script>
 export default {
-  name: 'list',
+  name: 'List',
   data () {
     return {
       items: []

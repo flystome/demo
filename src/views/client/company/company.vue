@@ -30,5 +30,5 @@ export default {
 </script>
 
 <style scoped lang="less">
-  @import 'home.less';
+  @import 'company.less';
 </style>
